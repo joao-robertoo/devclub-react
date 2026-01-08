@@ -8,7 +8,7 @@ import {
   InputLabel
 } from './styles'
 
-import UsersImage from './assets/Users.png'
+import UsersImage from '../../assets/users.png'
 
 function Home() {
 
