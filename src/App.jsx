@@ -1,42 +1,51 @@
-import { Title, Container, TopBackground, Form, ContainerInputs, Button, InputLabel } from './styles'
+import {
+  Title,
+  Container,
+  TopBackground,
+  Form,
+  ContainerInputs,
+  Button,
+  InputLabel
+} from './styles'
+
+import UsersImage from './assets/Users.png'
 
 function Home() {
 
   return (
     <Container>
+
       <TopBackground >
-        <img src="" alt="" />
+        <img src={UsersImage} alt="Imagem Usuário" />
       </TopBackground>
 
       <Form>
         <Title>Cadastrar Usuário</Title>
         <ContainerInputs>
-          <div>
 
             <div>
               <InputLabel>
-                Nome<span>*</span>
+                Nome<span> *</span>
               </InputLabel>
               <Input type="text" placeholder="Nome do Usuário" />
             </div>
 
             <div>
               <InputLabel>
-                Idade<span>*</span>
+                Idade<span> *</span>
               </InputLabel>
               <Input Type="number" placeholder="Idade do Usuário" />
             </div>
-            
-          </div>
-
-            <div>
-              <InputLabel>
-                Email<span>*</span>
-              </InputLabel>
-              <Input type="email" placeholder="E-mail do Usuário" />
-            </div>
 
         </ContainerInputs>
+
+        <div style={{ width: '100%'}}>
+          <InputLabel>
+            Email<span> *</span>
+          </InputLabel>
+          <Input type="email" placeholder="E-mail do Usuário" />
+        </div>
+
         <Button>Cadastrar Usuário</Button>
       </Form>
 
