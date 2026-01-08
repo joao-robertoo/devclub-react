@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import api from '../../services/api'
 
 import {
   Title,
@@ -17,8 +18,12 @@ function Home() {
   const inputAge = useRef()
   const inputEmail = useRef()
 
-function registerNewUser() {
-
+async function registerNewUser() {
+  await api.post('/usuarios', {
+    email: inputEmail.current.value,
+    age: inputAge.current.value,
+    name: inputName.current.value
+  })
 }
 
   return (
