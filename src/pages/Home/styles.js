@@ -11,7 +11,7 @@ export const Container = styled.div`
 `
 
 export const TopBackground = styled.div`
-    background: linear-gradient()to right, #fe7e5d, #7f3841;
+    background: linear-gradient(to right, #fe7e5d, #7f3841);
     height: 38vh;
     width: 90vw;
     max-width:800px;
@@ -82,4 +82,3 @@ export const InputLabel = styled.label`
     }
 `
 
-export const Button = styled.button``
