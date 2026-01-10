@@ -30,9 +30,7 @@ async function registerNewUser() {
   return (
     <Container>
 
-      <TopBackground >
-        <img src={UsersImage} alt="Imagem Usuário" />
-      </TopBackground>
+      <TopBackground />
 
       <Form>
         <Title>Cadastrar Usuário</Title>
